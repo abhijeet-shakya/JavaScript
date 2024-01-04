@@ -54,3 +54,32 @@ Float => number
 
 */
 
+// +++++++++++++++++++++++++++++
+
+// Stack (Primitve) , Heap (Non-Primitive)
+// jb bhi stack memeory use hoti hai hume variable ka ek copy milta hai
+
+// agr memeory heap mai define hoti hai toh referene milta hai original value ka 
+// jo bhi change krege original value mai change ho jayega
+
+let name = "Abhijeet";
+
+let otherName = name;
+otherName = "Abhi";
+
+console.log(name);
+console.log(otherName);
+
+let userOne = {
+    email: "abhi@gmail.com",
+    upi: "1234@upi",
+}
+let userTwo = userOne;
+
+userTwo.email = "jeet@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
