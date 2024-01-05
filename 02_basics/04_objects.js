@@ -58,14 +58,42 @@ const users =[
 
 // console.log(users[0].email);
 
-console.log(tinderUser)   // { id: '123abc', name: 'Abhijeet', isLoggedIn: false }
+// console.log(tinderUser)   // { id: '123abc', name: 'Abhijeet', isLoggedIn: false }
 
-console.log(Object.keys(tinderUser));   // [ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUser)); // [ '123abc', 'Abhijeet', false ]
+// console.log(Object.keys(tinderUser));   // [ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.values(tinderUser)); // [ '123abc', 'Abhijeet', false ]
 
-console.log(Object.entries(tinderUser));
-// [ [ 'id', '123abc' ], [ 'name', 'Abhijeet' ], [ 'isLoggedIn', false ] ]
+// console.log(Object.entries(tinderUser));
+// // [ [ 'id', '123abc' ], [ 'name', 'Abhijeet' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('id'));
-console.log(tinderUser.hasOwnProperty('ids'));
+// console.log(tinderUser.hasOwnProperty('id'));
+// console.log(tinderUser.hasOwnProperty('ids'));
 
+
+const course = {
+    courseName: "js in hindi",
+    coursePrice: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+const {courseInstructor} = course
+console.log(courseInstructor);
+
+const{coursePrice: price} = course
+console.log(price);
+
+// {} => destructuting
+
+// Json APIs
+// {
+//     "name": "Abhijeet",
+//     "age": 20,
+//     "isMarried": false
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
