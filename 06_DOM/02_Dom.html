@@ -16,29 +16,29 @@
 </body>
 <script>
     const parent = document.querySelector('.parent');
-    // console.log(parent);
-    // console.log(parent.children);
-    // console.log(parent.children[0].innerHTML);
+    console.log(parent); // parent div
+    console.log(parent.children); // Html collection of all children
+    console.log(parent.children[0].innerHTML); // Monday
 
-    // for(let i = 0; i < parent.children.length; i++){
-    //     console.log(parent.children[i].innerHTML);
-    // }
+    for(let i = 0; i < parent.children.length; i++){
+        console.log(parent.children[i].innerHTML);
+    } // Monday Tuesday Wednesday Thursday
 
-    // parent.children[0].style.color = 'orange';
+    parent.children[0].style.color = 'orange'; // Monday color changed to orange
     
-    // console.log(parent.firstElementChild);
-    // console.log(parent.lastElementChild);
+    console.log(parent.firstElementChild); // Monday
+    console.log(parent.lastElementChild); // Thursday
 
-    // const dayOne = document.querySelector('.day');
-    // console.log(dayOne);
+    const dayOne = document.querySelector('.day');
+    console.log(dayOne); // Monday
 
-    // console.log(dayOne.nextElementSibling);
+    console.log(dayOne.nextElementSibling); // Tuesday
 
-    // console.log(parent.firstElementChild.nextElementSibling.nextElementSibling);
+    console.log(parent.firstElementChild.nextElementSibling.nextElementSibling); // Wednesday
 
-    // console.log(dayOne.parentElement)
+    console.log(dayOne.parentElement) // parent div
 
-    console.log("nodes: ", parent.childNodes);
+    console.log("nodes: ", parent.childNodes); // NodeList(9) [text, div.day, text, div.day, text, div.day, text, div.day, text]
 
 
 
