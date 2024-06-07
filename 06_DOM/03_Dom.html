@@ -9,17 +9,30 @@
     
 </body>
 <script>
-    const div = document.createElement('div');
-    console.log(div);
-    div.className = "main";
-    div.id = Math.round(Math.random() *10 + 1);
-    div.setAttribute("title", "this is a div");
-    div.style.backgroundColor = "red";
-    div.style.padding = "20px";
-    // div.innerText = "Abhijeet";
-   const addText = document.createTextNode("Abhijeet");
-   div.appendChild(addText);
+    const div = document.createElement('div'); 
+    // <div></div>
+    console.log(div); 
+    // <div></div>
+    div.className = "main"; 
+    // <div class="main"></div>
 
-   document.body.appendChild(div);
+    div.id = Math.round(Math.random() *10 + 1);
+     // <div class="main" id="5"></div>
+
+    div.setAttribute("title", "this is a div");
+     // <div class="main" id="5" title="this is a div"></div>
+
+    div.style.backgroundColor = "red"; 
+    // <div class="main" id="5" title="this is a div" style="background-color: red;"></div>
+
+    div.style.padding = "20px";
+     // <div class="main" id="5" title="this is a div" style="background-color: red; padding: 20px;"></div>
+    // div.innerText = "Abhijeet";
+   const addText = document.createTextNode("Abhijeet"); // Abhijeet
+   div.appendChild(addText); 
+   // <div class="main" id="5" title="this is a div" style="background-color: red; padding: 20px;">Abhijeet</div>
+
+   document.body.appendChild(div);  
+   // <div class="main" id="5" title="this is a div" style="background-color: red; padding: 20px;">Abhijeet</div>
 </script>
 </html>
